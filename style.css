@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+header{
+    background-color: hsl(13, 100%, 72%);
+    width: 100vw;
+    height: 72vh;
+    border-radius: 0 0 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+#logo{
+    width: 70px;
+    margin-right: 40px;
+}
+#menu{
+    margin: 40px 100px;
+    display: flex; 
+    align-items: center;
+}
+#left-menu{
+    width: 50vw;
+}
+#right-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 50vw;
+}
+.link-menu{
+    margin-right: 25px;
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, 0.774);
+    font-weight: 600;
+    font-size: 12px;
+}
+.link-menu:hover{
+    color: hsl(0, 0%, 100%);
+    text-decoration:underline
+}
+.menu-button{
+    color:hsla(0, 0%, 100%, 0.774);
+    border: none;
+    background-color:transparent;
+    font-weight: 600;
+    font-size: 12px;
+    width: 100px;
+    height: 35px;
+
+}
+.menu-button:hover{
+    background-color:hsl(355, 100%, 74%) ;
+    border-radius: 20px;
+}
+
+#header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+}
+h1{
+    font-size: 50px;
+    font-family: 'Overpass';
+    font-weight: 300px;
+    letter-spacing: -1px;
+}
+.header-h3{
+    font-size: 20px;
+    font-family: 'Overpass';
+    font-weight:lighter;
+    letter-spacing: -1px;
+    color:hsla(0, 0%, 100%, 0.774);
+}
+#lasts-button-header{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 40px;
+
+}
+.last-menu-button{
+    color:hsl(355, 100%, 74%);
+    border: none;
+    background-color:hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 12px;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.last-menu-button:hover{
+    background-color:hsl(355, 100%, 74%) ;
+    color:hsl(0, 0%, 100%);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+h2{
+    color:hsl(240, 10%, 16%);
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Overpass';
+    font-size: 28px;
+}
+.main-box{
+    display: flex;
+
+}
+.main-box-text{
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    padding: 80px;
+    gap:15px
+}
+.main-img1{
+    width: 200px;
+}
+h3{
+    color: hsl(240, 10%, 16%);
+    margin-top: 40px;
+    font-family: 'Overpass';
+}
+p{
+    color: hsl(207, 13%, 34%);
+    font-size: 15px;
+    font-family: 'Overpass';
+    width: 100%;
+}
+
+#box-img-main{
+    position: relative;
+    
+}
+.main-img1{
+    position: absolute;
+    width: 700px;
+}
+section{
+    background-color: hsl(236, 22%, 24%);
+    width: 100vw;
+    height: 320px;
+    border-radius: 0 60px 0 60px;
+    display: flex;
+    align-items: center;   
+}
+#box-circle{
+    width: 50%;
+    height: 320px;
+    overflow: hidden;
+    position: relative; 
+}
+#circle1{   
+    width: 750px;
+    margin: -350px 0px 0 -155px;   
+}
+#img-section{
+    position: relative;
+}
+#cellphone-img{
+    width: 450px;
+    position: absolute;
+    top:-225px;
+    right: 0;
+}
+#text-section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    gap:20px;   
+}
+#h2-section{
+    margin: 0;
+    color:hsl(0, 0%, 100%);
+    text-align: start;
+
+}
+#p-section{
+    color: hsla(0, 0%, 100%, 0.774);
+    margin: 0 65px 0 0;
+}
+#main-box2{
+    display: flex;
+    width: 100vw;
+    margin-top:80px;
+    gap: 80px;
+}
+#box-img-main2{
+    position: relative;
+    width: 50%;
+
+}
+.main-img2{
+    width: 1000px;
+    margin: 10px 0 0 -300px;
+}
+#main-box-text2{
+    
+    justify-content: center;
+    margin-top: -60px;
+}
+footer{
+    background-color: hsl(240, 10%, 16%);
+    height: 58vh;
+    border-radius: 0 60px 0 0 ;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 120px 0 0;
+    margin-top: -100px;
+}
+.box-link-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.link-footer{
+    text-decoration: none;
+    color:hsla(0, 0%, 100%, 0.774); 
+    font-size: 11px;
+    letter-spacing: 0.5px;
+
+}
+.link-footer:hover{
+    color: hsl(0, 0%, 100%);
+    text-decoration:underline
+
+}
+h4{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 15px;
+    font-size: 12px;
+}
