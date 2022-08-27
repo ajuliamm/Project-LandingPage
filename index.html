@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
     <title>Landing Page Blogr</title>
 </head>
 
@@ -18,12 +19,23 @@
     <header>
 
         <div id="menu">
-            <img id="logo" src="./atts/logo.png">
+            <img  id="logo" src="./atts/logo.png">
+           
+            
             <div id="left-menu">
-
-                <a class="link-menu" href="#">Products ↓</a>
-                <a class="link-menu" href="#">Company</a>
-                <a class="link-menu" href="#">Connect</a>
+                <nav id="nav" class="dp-menu">
+                     <button  onclick="toggleMenu()" id="menu-mobile" type="button">Menu</button> 
+                    <ul id="menu-ul">
+                        <li><a class="link-menu" href="#">Products  </a></li>
+                        <li> <a class="link-menu" href="#">Company</a></li>
+                        <li><a class="link-menu" href="#">Connect</a>
+                            <ul>
+                                <li><a class="link-menu" href="#">Contact  </a></li>
+                                <li> <a class="link-menu" href="#">Newsletter</a></li>
+                                <li><a class="link-menu" href="#">Linkedin</a></li>
+                            </ul></li>
+                    </ul>
+                </nav>
             </div>
             <div id="right-menu">
                 <button class="menu-button" type="button">login</button>
@@ -72,24 +84,25 @@
             <img id="circle1" src="./atts/bg-pattern-circles.png">
         </div>
         <div id="img-section">
-            <img id="cellphone-img" src="./atts/illustration-phones.png">   
+            <img id="cellphone-img" src="./atts/illustration-phones.png">
         </div>
         <div id="box-text-section">
             <div id="text-section">
-            <h2 id="h2-section"> State of the Art Infrastructure</h2>
-            <p id="p-section">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
-                connectivity.
-                This ensures your site will load instantly, no matter where your readers are, keeping your site
-                competitive.
-            </p>
+                <h2 id="h2-section"> State of the Art Infrastructure</h2>
+                <p id="p-section">With reliability and speed in mind, worldwide data centers provide the backbone for
+                    ultra-fast
+                    connectivity.
+                    This ensures your site will load instantly, no matter where your readers are, keeping your site
+                    competitive.
+                </p>
             </div>
         </div>
     </section>
 
     <main>
-        <div  id="main-box2">
+        <div id="main-box2">
             <div id="box-img-main2">
-            <img class="main-img2" src="./atts/illustration-laptop-desktop.png">
+                <img class="main-img2" src="./atts/illustration-laptop-desktop.png">
             </div>
             <div class="main-box-text" id="main-box-text2">
                 <h3>Free, open, simple</h3>
@@ -108,26 +121,26 @@
     </main>
 
     <footer>
-        <div >
-        <img class="logo-footer" id="logo" src="./atts/logo.png">
+        <div>
+            <img class="logo-footer" id="logo" src="./atts/logo.png">
         </div>
 
         <div class="box-link-footer">
             <h4>Product</h4>
-        
-                <a href="#" class="link-footer">Overview</a>
-                <a href="#" class="link-footer">Pricing</a>
-                <a href="#" class="link-footer">Marketplace</a>
-                <a href="#" class="link-footer">Features</a>
-                <a href="#" class="link-footer">Integrations</a>
-            
+
+            <a href="#" class="link-footer">Overview</a>
+            <a href="#" class="link-footer">Pricing</a>
+            <a href="#" class="link-footer">Marketplace</a>
+            <a href="#" class="link-footer">Features</a>
+            <a href="#" class="link-footer">Integrations</a>
+
         </div>
         <div class="box-link-footer">
             <h4>Company</h4>
 
             <a href="#" class="link-footer">About</a>
             <a href="#" class="link-footer">Team</a>
-            <a href="#" class="link-footer" >Blog</a>
+            <a href="#" class="link-footer">Blog</a>
             <a href="#" class="link-footer">Careers</a>
 
         </div>

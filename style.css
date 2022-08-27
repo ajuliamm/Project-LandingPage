@@ -19,6 +19,9 @@ header{
     display: flex;
     flex-direction: column;
 }
+#menu-mobile{
+    display: none;
+}
 #logo{
     width: 70px;
     margin-right: 40px;
@@ -28,8 +31,11 @@ header{
     display: flex; 
     align-items: center;
 }
+
 #left-menu{
     width: 50vw;
+    display: flex;
+    justify-content: start;
 }
 #right-menu{
     display: flex;
@@ -61,6 +67,41 @@ header{
 .menu-button:hover{
     background-color:hsl(355, 100%, 74%) ;
     border-radius: 20px;
+}
+.dp-menu ul {
+    list-style-type: none;
+    position: relative;
+}
+.dp-menu ul li{
+    display: inline;
+}
+.dp-menu ul li a {
+    transition: .3s;
+    display: inline-block;
+}
+.dp-menu ul ul{
+    display: none;
+    position: absolute;
+}
+.dp-menu ul ul{
+    width: 150px;
+    left: 152px;
+    border-radius: 5px;
+}
+.dp-menu ul li:hover ul{
+    display: block;
+    
+}
+.dp-menu ul ul li a{
+    display: block;
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(240, 2%, 34%) ;
+    padding:15px;  
+}
+.dp-menu ul ul li:hover a{
+    
+    color:hsl(0, 0%, 0%) ;
+    
 }
 
 #header-text{
@@ -427,7 +468,39 @@ h4{
     .logo-footer{
         width: 10px;
     }
+    #menu-ul{
+        display: none;
+    }
+    #right-menu{
+        display: none;
+    }
+    #menu-mobile{
+        display: block;
+        width: 30px;
+    }
+   
+    #nav.active #menu-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
+    #nav.active #right-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
+    }
+    #menu-mobile{
+        background-color:hsl(0, 0%, 100%) ;
+        width: 70px;
+        height: 30px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        position: absolute;
+        right: 10px;
+
+    }
 
 }
