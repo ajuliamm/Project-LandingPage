@@ -69,6 +69,9 @@ header{
     background-color:hsl(355, 100%, 74%) ;
     border-radius: 20px;
 }
+.menu-button:active{
+    opacity: 0.5;
+}
 .dp-menu ul {
     list-style-type: none;
     display: flex;
@@ -142,6 +145,9 @@ h1{
 .last-menu-button:hover{
     background-color:hsl(355, 100%, 74%) ;
     color:hsl(0, 0%, 100%);
+}
+.last-menu-button:active{
+    opacity: 0.5;
 }
 main{
     display: flex;
@@ -300,10 +306,7 @@ h4{
 }
 @media(max-width:777px){
    
-    .dp-menu ul {
-        flex-direction: column;
-        gap: 5px;
-    }
+    
     #header-text{
         text-align: center;
         align-self: center;
@@ -367,7 +370,7 @@ h4{
         grid-area: text;
     }
     #box-img-main{
-        width:100% ;
+        width:100%;
         display: block;
         margin: 30px auto;
         margin-bottom: -30px;
@@ -509,32 +512,87 @@ h4{
         display: none;
     }
     #menu-mobile{
-        display: block;
+        display: flex;
         width: 30px;
+    }
+    #menu-ul a{
+        color: #3f3c3c;
+        text-align: center;
+        padding: 22px 0 22px 0 ;
+        margin: 0;
+        font-size: 1rem;
+        border-left: 5px solid transparent;
+        transition: .3s;
+    }
+    #menu-ul li:hover{
+        background-color: #a8a3a38c;
+        transition: .3s;
     }
    
     #nav.active #menu-ul {
+        display: block;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        background-color: #ffffff;
+        color: #3f3c3c;
+        width: 70%;
+        top: 80px;
+        left: 0;
+        right: 0;
+        text-align: center;
+
+    }
+    .dp-menu ul ul{
+        display: none;
+        width: 100%;
+    }
+    
+    
+
+    #nav.active #right-menu{
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    #nav.active #right-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
 
     }
+
     #menu-mobile{
-        background-color:hsl(0, 0%, 100%) ;
-        width: 70px;
-        height: 30px;
-        font-size: 16px;
+        background-color:transparent ;
         border: none;
-        border-radius: 5px;
+        display: flex;
+        gap: .5px;
         position: absolute;
         right: 10px;
 
+
+    }
+    #hamburger{
+        border-top: 2px solid;
+        width: 20px;
+        color: #3f3c3c;
+    }
+    #hamburger::after, #hamburger::before{
+        height: 2px;
+        width: 20px;
+        display: block;
+        background: currentColor;
+        margin-top: 5px;
+        content: '';
+        position: relative;
+        transition: .5s;
+
+    }
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after{
+        transform:rotate(-135deg);
+        top: -7px;
     }
 
 }
